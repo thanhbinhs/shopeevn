@@ -158,6 +158,7 @@
     transform-origin:right top;
     animation: notifyGrowth ease-in 0.2s;
     will-change: opacity, transform;
+    z-index:1;
     display: none;
 }
 
