@@ -87,6 +87,7 @@
     display: none;
     animation: fadeIn ease 0.3s;
     cursor:initial;
+    z-index: 2;
 }
 
 .header__qr::before{
