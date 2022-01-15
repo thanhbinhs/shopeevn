@@ -1,9 +1,6 @@
 
-
-
-
 .header{
-    height: 120px;
+    height: var(--header-height);
     background-image: linear-gradient(#f53e2d, #fe6433);
 }
 
@@ -15,6 +12,7 @@
 .header__navbar-list{
     list-style: none;
     padding-left: 0;
+    margin: 4px 0 0 0;
 }
 
 .header__navbar-item{
@@ -40,6 +38,8 @@
 .navbar__icon-link{
     display: inline-flex;
     align-items: center;
+    text-decoration: none;
+    color: var(--white-color);
 }
 
 .header__navbar-item--separate::after{
@@ -49,10 +49,11 @@
     border-right: 0.2rem solid #f96e5c;
     height: 1.6rem;
     right: -1.2rem;
-    top: 0;
+    top: 4px;
 }
 
 .navbar__icon:hover,
+.navbar__icon-link:hover,
 .header__navbar-item:hover,
 .header__navbar-link:hover{
     color: rgba(255,255,255,0.7);
@@ -267,5 +268,74 @@
     color:var(--primary-color);
 }
 
+/* Header with search */
+.header-with-search{
+    height: var(--header-with-search-height);
+    display: flex;
+    align-items: center;
+    margin:0 12px;
+}
 
+.header__logo{
+    width: 200px;
+}
+
+.header__logo-img{
+    width: 150px;
+    color: var(--white-color);
+}
+
+.header__search{
+    background-color: var(--white-color);
+    height: 40px;
+    flex: 1;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__search-input{
+    width: 92%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: var(--text-color);
+    padding: 0 16px;
+    border-radius: 3px;
+}
+
+.header__cart{
+    width: 154px;
+    text-align: center;
+}
+
+.header__cart-icon{
+    font-size: 2.4rem;
+    color: var(--white-color);
+    margin-top: 8px;
+}
+
+.header__search-btn{
+    background-color: var(--primary-color);
+    border: none;
+    height: 36px;
+    margin-right: 3px;
+    border-radius: 2px;
+    flex:1;
+    outline: none;
+    display: flex;
+}
+
+.header__search-btn:hover{
+    background-color: #f46455;
+    cursor: pointer;
+}
+
+.header__search-btn-icon{
+    font-size: 1.6rem;
+    color: var(--white-color);
+    margin: auto;
+}
 
